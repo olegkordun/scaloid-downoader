@@ -35,7 +35,7 @@ class ListFragment extends Fragment with OnClickListener {
   override def onClick(v: View): Unit = {
     val url: String = urlField.getText.toString
 
-    if ((url startsWith "http:") || (url startsWith "https:") || 1==1) {
+    if ((url startsWith "http:") || (url startsWith "https:")) {
       val d:Download = new Download(url)
       manager.addRunner(new DownloadRunner(d))
 
