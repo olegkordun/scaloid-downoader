@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Downloader</string>
+    <string name="welcome">Downloader</string>
+    <string name="start">Start</string>
+    <string name="wrong_url">Please enter valid URL</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="cancel">Cancel</string>
+    <string name="elapsed">Elapsed (s)</string>
+    <string name="URL">URL</string>
+    <string name="avgSpeed">Average Speed B/s</string>
+    <string name="sizeCaption">Size (Bytes)</string>
+    <string name="downloadedCaption">Downloaded(Bytes)</string>
+
+</resources>

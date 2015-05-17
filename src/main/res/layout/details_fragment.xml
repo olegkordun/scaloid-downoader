@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DetailContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailActivity" >
+    <include layout="@layout/row"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" android:id="@+id/include"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/URL"
+            android:id="@+id/urlCaption"
+
+            android:layout_below="@+id/elapsedCaption" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elapsed"
+            android:id="@+id/elapsedCaption"
+            android:layout_below="@+id/avdSpeedCaption" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_toLeftOf="@+id/elapsed"
+            android:layout_toStartOf="@+id/elapsed"/>
+    <TextView
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/elapsed"
+            android:layout_alignTop="@+id/elapsedCaption"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/avdSpeedCaption" android:layout_toEndOf="@+id/avdSpeedCaption"/>
+    <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/avgSpeed"
+            android:id="@+id/avdSpeedCaption"
+            android:layout_below="@+id/dloadedCaption" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sizeCaption"
+            android:id="@+id/sizeCaption"
+            android:layout_below="@+id/include" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/downloadedCaption"
+            android:id="@+id/dloadedCaption"
+            android:layout_below="@+id/sizeCaption"
+            android:layout_alignRight="@+id/avdSpeedCaption" android:layout_alignEnd="@+id/avdSpeedCaption"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true" android:visibility="invisible"
+            android:contentDescription="Preview"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:layout_below="@+id/url"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/url"
+            android:textAlignment="textEnd" android:layout_below="@+id/elapsedCaption"
+            android:layout_alignRight="@+id/elapsed" android:layout_alignEnd="@+id/elapsed"
+            android:layout_toEndOf="@+id/sizeCaption" android:layout_toRightOf="@+id/sizeCaption"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/size"
+            android:layout_above="@+id/downloaded"
+            android:layout_alignRight="@+id/downloaded" android:layout_alignEnd="@+id/downloaded"
+            android:layout_toRightOf="@+id/dloadedCaption" android:layout_toEndOf="@+id/dloadedCaption"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/downloaded" android:layout_below="@+id/sizeCaption"
+            android:layout_toRightOf="@+id/avdSpeedCaption" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/avgSpeed" android:layout_below="@+id/dloadedCaption"
+            android:layout_toRightOf="@+id/elapsedCaption" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+</RelativeLayout>
