@@ -1,25 +1,22 @@
 package me.kordun.downloader
 
-
 import java.io.{InputStream, RandomAccessFile}
 import java.net.{URL, HttpURLConnection}
-import scala.util.control.Breaks._
 
-import android.os.{Environment, Handler}
+import android.os.Handler
 import me.kordun.downloader.Status._
 
 class DownloadRunner(var download: Download) extends Runnable {
   var uiHandler: Handler = null
+  //dummy empty callbacks
   var viewUpdate: () => Unit = () => ()
-  //dummy empty function
   var detailsViewUpdate: () => Unit = () => ()
-  //dummy empty function
+
   var shouldContinue: Boolean = true
   private val BUFFER_SIZE: Int = 1024
 
 
   override def run(): Unit = {
-    println("run")
     try {
       val startTime: Long = System.currentTimeMillis()
       var file: RandomAccessFile = null
