@@ -7,7 +7,6 @@ import android.view._
 import android.widget.AdapterView.OnItemClickListener
 import android.widget._
 
-
 class MainActivity extends FragmentActivity with OnItemClickListener {
   var manager = DownloadManager
 
@@ -19,7 +18,6 @@ class MainActivity extends FragmentActivity with OnItemClickListener {
   override def onSaveInstanceState(savedInstanceState: Bundle) {
     manager.saveDownloads(savedInstanceState)
     super.onSaveInstanceState(savedInstanceState)
-
   }
 
   override def onRestoreInstanceState(savedInstanceState: Bundle): Unit = {

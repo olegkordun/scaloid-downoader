@@ -8,14 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget._
 
-
-
 class DetailsFragment() extends Fragment {
   private var itemIndex: Int = 0
 
   override def onCreate(savedInstanceState: Bundle) {
     super.onCreate(savedInstanceState)
-
   }
 
   override def onCreateView(inflater: LayoutInflater, container: ViewGroup, savedInstanceState: Bundle): View = {

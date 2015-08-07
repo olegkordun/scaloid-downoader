@@ -1,7 +1,6 @@
 package me.kordun.downloader
 
 import java.util
-
 import android.os.{Environment, Looper, Handler, Bundle}
 import scala.collection.JavaConverters._
 import Status._
@@ -56,6 +55,4 @@ object DownloadManager {
   def restoreFromStorage() = {
     //TODO:resore from SQLite
   }
-
-
 }

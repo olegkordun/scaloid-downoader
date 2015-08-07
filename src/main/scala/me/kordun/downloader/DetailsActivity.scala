@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.{View, ViewGroup, LayoutInflater, Menu}
 import android.widget.{Button, ListView, EditText, TextView}
 
-
 class DetailsActivity extends Activity{
 
   override def onCreate(savedInstanceState: Bundle) {
@@ -23,10 +22,5 @@ class DetailsActivity extends Activity{
     val ft: FragmentTransaction = getFragmentManager.beginTransaction()
     ft.replace(R.id.DetailContainer, details)
     ft.commit
-
   }
-
-
-
-
 }

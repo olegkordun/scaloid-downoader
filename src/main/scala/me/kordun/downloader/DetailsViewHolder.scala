@@ -1,18 +1,12 @@
 package me.kordun.downloader
 
 import java.io.File
-
-
 import Status._
 import android.graphics.{BitmapFactory, Bitmap}
-
-
 import android.widget.{ImageView, TextView}
-
 import android.view.View._
 
 class DetailsViewHolder extends ViewHolder {
-
 
   var URL: TextView = null
   var avgSpeed: TextView = null
@@ -42,5 +36,4 @@ class DetailsViewHolder extends ViewHolder {
       catch {case e:Exception =>{}}
     }
   }
-
 }

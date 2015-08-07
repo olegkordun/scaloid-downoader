@@ -1,11 +1,7 @@
 package me.kordun.downloader
 
-
 import android.app.{Activity, Fragment}
-
-
 import android.os.Bundle
-
 import android.view.View.OnClickListener
 import android.view.{LayoutInflater, ViewGroup, View}
 import android.widget._
@@ -15,7 +11,6 @@ class ListFragment extends Fragment with OnClickListener {
   private var listView: ListView = null
   private var urlField: EditText = null
   private var startBtn: Button = null
-
 
   override def onCreateView(inflater: LayoutInflater, container: ViewGroup, savedInstanceState: Bundle): View = {
     println("onCreateView")
@@ -45,6 +40,4 @@ class ListFragment extends Fragment with OnClickListener {
       urlField.setError(getResources.getString(R.string.wrong_url))
     }
   }
-
-
 }

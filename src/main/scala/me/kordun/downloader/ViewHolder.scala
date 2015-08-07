@@ -1,5 +1,4 @@
 package me.kordun.downloader
-
 import android.view.View
 import android.view.View._
 import android.widget.{Button, ProgressBar, TextView}
@@ -19,7 +18,6 @@ class ViewHolder {
     statusLabel.setText(download.status.toString)
     progressBar.setMax(download.size)
     progressBar.setProgress(download.downloaded)
-
 
     val status = download.status
     status match {
@@ -55,7 +53,6 @@ class ViewHolder {
         progressBar.getProgressDrawable().setColorFilter(Color.DKGRAY, Mode.SRC_IN)
       }
     }
-
   }
 
   def setButtonListeners(downloadTask: DownloadRunner): Unit = {
@@ -78,5 +75,4 @@ class ViewHolder {
       }
     })
   }
-
 }

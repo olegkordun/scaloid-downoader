@@ -1,7 +1,6 @@
 package me.kordun.downloader
 
 import me.kordun.downloader.Status._
-
 import scala.util.Random
 
 class Download extends Serializable {
@@ -26,7 +25,4 @@ class Download extends Serializable {
   private def getFileName(url: String): String = {
     Random.nextPrintableChar() + Random.nextPrintableChar() + url.substring(url.lastIndexOf('/') + 1)
   }
-
-
-
 }

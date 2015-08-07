@@ -1,17 +1,13 @@
 package me.kordun.downloader
 
-
 import java.util.ArrayList
 import java.util.concurrent.ExecutorService
-
 import android.os.{Looper, HandlerThread, Handler}
 import android.view.View._
 import Status._
-
 import android.content.Context
 import android.view.{ViewGroup, View, LayoutInflater}
 import android.widget.{Button, ProgressBar, TextView, ArrayAdapter}
-
 
 class ViewArrayAdapter(context: Context, objects: ArrayList[DownloadRunner])
   extends ArrayAdapter[DownloadRunner](context, android.R.layout.list_content, objects) {

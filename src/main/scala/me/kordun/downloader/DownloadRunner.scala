@@ -15,15 +15,13 @@ class DownloadRunner(var download: Download) extends Runnable {
   var shouldContinue: Boolean = true
   private val BUFFER_SIZE: Int = 1024
 
-
   override def run(): Unit = {
     try {
       val startTime: Long = System.currentTimeMillis()
       var file: RandomAccessFile = null
       var stream: InputStream = null
       val url: URL = new URL(download.url)
-      val connection: HttpURLConnection = url.openConnection().asInstanceOf[HttpURLConnection];
-
+      val connection: HttpURLConnection = url.openConnection().asInstanceOf[HttpURLConnection]
 
       // portion of file to download.
       if(download.downloaded > 0) {
